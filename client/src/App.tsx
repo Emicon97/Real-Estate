@@ -1,13 +1,22 @@
-import React, { ReactElement } from 'react';
-import { Test } from './Test'
-import './App.css';
+import React, { ReactElement } from 'react'
+import { Route, Routes } from 'react-router-dom'
+import LandingPage from './components/LandingPage'
+import Home from './components/Home'
+import Create from './components/Create'
+import Details from './components/Details'
+import Button from './styledComponents/Button'
+import StyledLink from './styledComponents/StyledLink'
 
-function App():ReactElement {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <Test/>
-    </div>
-  );
+    <Routes>
+      <Route path='/' element={<LandingPage/>} />
+        <Route path='/home' element={<Home/>} />
+        <Route path='/home/create' element={<Create/>} />
+        <Route path='/home/:id/:from' element={<Details/>} />
+        <Route path='*' element={<Home/>} />
+    </Routes>
+  )
 }
 
 export default App;
