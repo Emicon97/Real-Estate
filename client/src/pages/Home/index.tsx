@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '../../styledComponents/Button'
-import CardContainer from '../../styledComponents/ContainerCard'
+import CardContainer from '../../styledComponents/CardsContainer'
 import StyledCard from '../../styledComponents/StyledCard'
 
 const Home: React.FC = () => {

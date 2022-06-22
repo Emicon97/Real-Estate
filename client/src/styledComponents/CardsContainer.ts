@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const CardContainer = styled.div`
+const CardsContainer = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -18,4 +18,4 @@ const CardContainer = styled.div`
       margin: 0;
     }
   `
-export default CardContainer
+export default CardsContainer
