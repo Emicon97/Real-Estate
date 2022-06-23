@@ -8,10 +8,10 @@ const StyledCard = styled.div`
   align-items: flex-start;
   display: flex;
   flex-direction: column; 
+  padding: 1px 1px 0 1px;
   border-radius: 1rem;
   border: 1px solid #efefef;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089);
-  padding-bottom: 10px;
   
   img {
     width: 300px;
@@ -19,5 +19,26 @@ const StyledCard = styled.div`
     object-fit: cover;
     border-radius: 1rem;
   }
+
+  div {
+    padding: 2px 0 2px 6px;
+  }
+
+  blockquote {
+    position: relative;
+    top: -342px;
+    left: 5px;
+  }
+
+  * {
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+  }
+  
+  &:hover {
+    margin-top: 8px;
+    margin-bottom: 20px;
+  }
+
 `
 export default StyledCard

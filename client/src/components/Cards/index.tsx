@@ -23,11 +23,11 @@ interface property {
 const propertiesList: property[] = [
   {
     id: 1,
-    address: 'La perla 534',
-    area: 170,
-    type: 'casa',
+    address: 'Av. La perla 534 Buenos aires',
+    area: 84,
+    type: 'Casa',
     rooms: 2,
-    status: 'available',
+    status: 'Disponible',
     city: 'Buenos aires',
     bathrooms: 2,
     neighbourhood: 2,
@@ -40,11 +40,11 @@ const propertiesList: property[] = [
 
   {
     id: 2,
-    address: 'La perla 500',
-    area: 170,
-    type: 'casa',
+    address: 'Av. La perla 500 Rio de la plata',
+    area: 92,
+    type: 'Casa',
     rooms: 2,
-    status: 'available',
+    status: 'Disponible',
     city: 'Buenos aires',
     bathrooms: 2,
     neighbourhood: 2,
@@ -57,11 +57,11 @@ const propertiesList: property[] = [
 
   {
     id: 3,
-    address: 'La perla 500',
+    address: 'Av. La perla 500 lumbreras',
     area: 170,
-    type: 'condominio',
+    type: 'Condominio',
     rooms: 2,
-    status: 'available',
+    status: 'Disponible',
     city: 'Buenos aires',
     bathrooms: 2,
     neighbourhood: 2,
@@ -73,11 +73,11 @@ const propertiesList: property[] = [
   },
   {
     id: 4,
-    address: 'La perla 500',
-    area: 170,
-    type: 'casa de playa',
+    address: 'Calle General Castilla 2344 La Paz',
+    area: 220,
+    type: 'Casa de playa',
     rooms: 2,
-    status: 'available',
+    status: 'Disponible',
     city: 'Buenos aires',
     bathrooms: 2,
     neighbourhood: 2,
@@ -96,20 +96,20 @@ const Cards: React.FC = () => {
     <CardsContainer>
       {
         propertiesList.map(e => (
-            <Card 
-              key={e.id}
-              id = {e.id}
-              address = {e.address}
-              area  = {e.area}
-              type = {e.type}
-              rooms = {e.rooms}
-              status = {e.status}
-              city = {e.city}
-              bathrooms = {e.bathrooms}
-              rentPrice = {e.rentPrice}
-              sellPrice = {e.sellPrice}
-              pictures = {e.pictures}
-            />
+          <Card 
+            key={e.id}
+            id = {e.id}
+            address = {e.address}
+            area  = {e.area}
+            type = {e.type}
+            rooms = {e.rooms}
+            status = {e.status}
+            city = {e.city}
+            bathrooms = {e.bathrooms}
+            rentPrice = {e.rentPrice}
+            sellPrice = {e.sellPrice}
+            pictures = {e.pictures}
+          />
         ))
       }
     </CardsContainer>
