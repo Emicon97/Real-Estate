@@ -1,17 +1,22 @@
 import React from 'react'
-import Button from '../../styledComponents/Button'
-import CardContainer from '../../styledComponents/CardsContainer'
+import Cards from '../../components/Cards'
+import CardsContainer from '../../styledComponents/CardsContainer'
 import StyledCard from '../../styledComponents/StyledCard'
 
 const Home: React.FC = () => {
   return (
     <div>
-      {/* ESTO ES SOLO ES PRUEBA BORRAR CON GUSTO: */}
-      <CardContainer>
-        <StyledCard>
-          <Button>Botón de prueba</Button>
-        </StyledCard>
-      </CardContainer>
+      <div>
+        Aquí Navbar
+      </div>
+      <div>
+        <div className='LeftPanel'>
+          Aquí Filter Panel
+        </div>
+        <CardsContainer>
+            <Cards/>
+        </CardsContainer>
+      </div>      
     </div>
   )
 }

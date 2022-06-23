@@ -1,10 +1,9 @@
 import styled from 'styled-components'
 
 const Button = styled.button`
-    background: white;
+    background: #fff;
     cursor: pointer;
     font-size: 14px;
-    margin: 4px;
     padding: 4px 10px;
     border: 2px solid #E52F50;
     border-radius: 30px;
@@ -14,5 +13,24 @@ const Button = styled.button`
         /* background: linear-gradient(45deg, #A3278F 0%, #E52F50 100%); */
         /* border: 2px solid #E52F50; */
     }
+
+    &.type {
+        background: #E52F50;
+        color: #fff;
+        border: 1px solid #E52F50;
+        padding: 0px 4px 0px 4px;
+        position: relative;
+        margin: 0;
+        top: -280px;
+        left: 5px;
+        width: auto;
+        /* cursor: default; */
+        &:hover {
+            background-color: #E52F50;
+            /* color: #333; */
+        }
+    }
+
+
 `
 export default Button

@@ -8,12 +8,12 @@ import Details from './pages/Details'
 const App: React.FC = () => {
   return (
     <Routes>
-      <Route path='/' element={<LandingPage/>} />
-        <Route path='/home' element={<Home/>} />
-        <Route path='/home/create' element={<Create/>} />
-        <Route path='/home/:id' element={<Details/>} />
-        <Route path='*' element={<Home/>} />
-    </Routes>
+        <Route path='/' element={<LandingPage/>} />
+          <Route path='/home' element={<Home/>} />
+          <Route path='/home/create' element={<Create/>} />
+          <Route path='/home/:id' element={<Details/>} />
+          <Route path='*' element={<Home/>} />
+      </Routes>
   )
 }
 
