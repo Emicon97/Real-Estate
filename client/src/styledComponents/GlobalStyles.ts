@@ -6,11 +6,37 @@ export default createGlobalStyle`
         outline: 0;
         padding: 0;
         font-family: 'Montserrat', sans-serif;
-        font-size: 16px;
+        font-size: 14px;
     }
 
-    body {
+    /* Titulo */
+    h1 {
+        font-size: 18px;
+        font-weight: 700;
     }
+    /* SubTitulo */
+    h2 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    /* Normal */
+    h3 {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    /* Small */
+    h4 {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    h5 {
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+
 
     
 `
